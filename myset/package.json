@@ -1,0 +1,26 @@
+{
+  "name": "queue",
+  "version": "1.0.0",
+  "description": "my ts queue realisation",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "coverage": "nyc -r lcov -r text -e .ts -x \"src/*.spec.ts\" yarn test",
+    "test_watch": "nodemon --ext ts --exec 'jasmine-ts --config=jasmine.json'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.13.0",
+    "jasmine-ts": "^0.3.0",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.0.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "jasmine": "^3.5.0",
+    "jasmine-ts-console-reporter": "^3.1.1"
+  }
+}
